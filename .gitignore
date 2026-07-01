@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+*.log
+.DS_Store
+venv/
+.venv/
+.streamlit/secrets.toml
+data/dq_results.csv
+data/dq_scores.csv
+data/data_profile.csv
+data/reconciliation.csv
+data/downstream_impact.csv
+data/audit_log.csv
