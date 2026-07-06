@@ -192,7 +192,7 @@ with tab2:
         failed.rename(columns={"rule_id":"Rule","table_name":"Table","category":"Category",
                                 "severity":"Severity","description":"Description",
                                 "failed_records":"Issues","pass_rate_pct":"Pass Rate %"})
-              .style.applymap(sev_color, subset=["Severity"]),
+              .style.map(sev_color, subset=["Severity"]),
         use_container_width=True, hide_index=True
     )
 
@@ -379,7 +379,7 @@ with tab6:
         .rename(columns={"log_id":"Log ID","table_name":"Table","rule_id":"Rule",
                           "severity":"Severity","description":"Description",
                           "records_affected":"Records","action_taken":"Action","resolved":"Resolved"})
-        .style.applymap(sev_color, subset=["Severity"]),
+        .style.map(sev_color, subset=["Severity"]),
         use_container_width=True, hide_index=True
     )
 
